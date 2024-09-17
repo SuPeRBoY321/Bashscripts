@@ -1,6 +1,5 @@
 #!/bin/bash
-# cleanup, version 2
-# Root rights are required for the script to work.
+
 
 LOG_DIR=/var/log
 ROOT_UID=0     # Only the user with $UID 0 has root privileges.
