@@ -34,12 +34,8 @@ fi  # Checking the directory before clearing the log files.
 tail -$lines messages > mesg.temp # Save the last lines in a log file.
 mv mesg.temp messages
 
-
-# cat /dev/null > messages
-#* This command is no longer necessary, since the cleanup is performed above.
-
 cat /dev/null > wtmp  #  the commands ': > wtmp' and '> wtmp' have the same effect.
-echo "Лог-файлы очищены."
+echo "logs be cleared."
 
 exit 0
 #  Return 0
