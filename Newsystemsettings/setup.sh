@@ -46,10 +46,5 @@ if ! command -v docker-compose &> /dev/null; then
     chmod +x /usr/local/bin/docker-compose
 fi
 
-
-#Install docker-compose
-apt-get update
-apt-get install docker-compose-plugin
-
 echo "$DOCKER_STATUS"
 echo "$DC_STATUS"
