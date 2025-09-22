@@ -14,7 +14,8 @@ vim \
 git \
 python3-full \
 jq \
-snap
+snap \
+tree
 
 # Checking and install docker
 if ! command -v docker &> /dev/null || ! systemctl is-active --quiet docker; then
