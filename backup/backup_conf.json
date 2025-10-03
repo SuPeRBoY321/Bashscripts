@@ -1,0 +1,20 @@
+{
+  "backup_plan": "v1",
+  "backups" : {
+    {
+      "backup_name" : "f1",
+      "source_folder" : "/home/test/f1",
+      "target_folder": "./mybackups",
+    },
+    {
+      "backup_name" : "f2",
+      "source_folder" : "/home/test/f2",
+      "target_folder": "./mybackups",
+    },
+    {
+      "backup_name" : "f3",
+      "source_folder" : "/home/test/f3",
+      "target_folder": "./mybackups",
+    }
+  }
+}
