@@ -20,5 +20,19 @@ for (( i=0; i<BACKUP_COUNT; i++));  do
     echo "---Skipping $BACKUP_NAME: Source folder $SOURCE_FOLDER dose not exist"
     continue #i=i+1
   fi
+  TIMESTAMP=$(date +"%Y%m%d %H%M%S")
+  BACKUP_FILE="$TARGET_FOLDER/$BACKUP_NAME-$TIMESTAMP.tar.gz"
 
+
+  echo "Backing up $SOURCE FOLDER to SBACKUP FILE..."
+  tar -czf "$BACKUP_FILE" C "$SOURCE_FOLDER"
+  
+  if [ $? -eq 0 ]; then
+    echo "---Backup $BACKUP NAME completed successfully."  
+  else
+    echo "Backup SBACKUP NAME failed."
+  fi
+  
+  echo "---Finish backup: SBACKUP NAME"
+  
 done
