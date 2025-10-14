@@ -47,5 +47,12 @@ if ! command -v docker-compose &> /dev/null; then
     chmod +x /usr/local/bin/docker-compose
 fi
 
+#Setting git
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ssh -T git@github.com
+
 echo "$DOCKER_STATUS"
 echo "$DC_STATUS"
+
+
